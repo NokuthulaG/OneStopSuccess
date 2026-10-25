@@ -1,0 +1,235 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7f6;
+    color: #17221f;
+}
+
+.home-screen {
+    min-height: 100vh;
+    padding: 45px 20px 35px;
+    text-align: center;
+}
+
+.screen-hidden {
+    display: none;
+}
+
+h1 {
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.tagline {
+    font-size: 17px;
+    margin-bottom: 35px;
+    color: #53635e;
+}
+
+.journey {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    max-width: 430px;
+    margin: 0 auto 35px;
+}
+
+.journey-card {
+    background: white;
+    border-radius: 20px;
+    padding: 25px 20px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+}
+
+.person {
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+.journey-card h2 {
+    font-size: 20px;
+    margin-bottom: 6px;
+}
+
+.journey-card p {
+    color: #64736e;
+    font-size: 15px;
+}
+
+#startButton {
+    border: none;
+    border-radius: 30px;
+    padding: 16px 28px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    background: #17221f;
+    color: white;
+    width: 90%;
+    max-width: 350px;
+}
+
+#startButton:active {
+    transform: scale(0.98);
+}
+
+.starting-points {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 430px;
+    margin: 0 auto 30px;
+}
+
+.starting-card {
+    border: none;
+    background: white;
+    border-radius: 20px;
+    padding: 28px 20px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+    color: #17221f;
+}
+
+.starting-card h2 {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.starting-card p {
+    color: #64736e;
+    font-size: 15px;
+}
+
+.starting-card:active {
+    transform: scale(0.98);
+}
+
+.screen-footer {
+    color: #64736e;
+    font-size: 14px;
+    max-width: 350px;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+
+/* DIGITAL SCHOOL BAG */
+
+.digital-school-bag {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 15px;
+    position: relative;
+}
+
+.bag-body {
+    width: 58px;
+    height: 48px;
+    background: #17221f;
+    border-radius: 8px;
+    position: absolute;
+    bottom: 5px;
+    left: 6px;
+}
+
+.bag-handle {
+    width: 26px;
+    height: 18px;
+    border: 5px solid #17221f;
+    border-bottom: none;
+    border-radius: 12px 12px 0 0;
+    position: absolute;
+    top: 3px;
+    left: 22px;
+}
+
+.bag-pocket {
+    width: 34px;
+    height: 16px;
+    background: white;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 7px;
+    left: 12px;
+}
+
+
+/* Study pathway comparison layout */
+.career-comparison {
+    margin: 28px 0;
+    padding: 20px 14px;
+    border: 1px solid #cbd5d1;
+    border-radius: 14px;
+    background: #f7faf8;
+}
+
+.career-comparison h3 {
+    margin: 0 0 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #cbd5d1;
+}
+
+.institution-card {
+    margin: 20px 0;
+    padding: 18px 14px;
+    border: 1px solid #d5ded9;
+    border-radius: 12px;
+    background: #ffffff;
+    line-height: 1.6;
+}
+
+.institution-card h4 {
+    margin: 0 0 12px;
+}
+
+.institution-card h5 {
+    margin: 18px 0 8px;
+}
+
+.institution-card p {
+    margin: 10px 0;
+}
+
+.institution-card ul {
+    padding-left: 22px;
+    margin: 8px 0 16px;
+}
+
+#institutionResults > h2,
+#institutionResults > h3 {
+    margin-top: 28px;
+}
+
+#institutionResults > p {
+    line-height: 1.6;
+    margin: 12px 0;
+}
+
+
+
+/* Institution logo aligned beside its name */
+.institution-heading {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 10px 0 16px;
+}
+
+.institution-logo {
+    flex: 0 0 48px;
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+}
+
+.institution-name {
+    margin: 0;
+    font-weight: 600;
+}

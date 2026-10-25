@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One-Stop Success</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- SCREEN 1 -->
+    <main id="screen1" class="home-screen">
+
+        <h1>ONE-STOP SUCCESS</h1>
+
+        <p class="tagline">Your journey from school to work.</p>
+
+        <section class="journey">
+
+            <div class="journey-card">
+                <div class="person">🎒</div>
+                <h2>LEARNER</h2>
+                <p>Discover your path</p>
+            </div>
+
+            <div class="journey-card">
+                <div class="person">🎓</div>
+                <h2>STUDENT</h2>
+                <p>Build your future</p>
+            </div>
+
+            <div class="journey-card">
+                <div class="person">💼</div>
+                <h2>WORKING</h2>
+                <p>Start your career</p>
+            </div>
+
+            <div class="journey-card">
+                <div class="person">🤝</div>
+                <h2>ALUMNI</h2>
+                <p>Share your journey</p>
+            </div>
+
+        </section>
+
+        <button id="startButton" onclick="document.getElementById('screen1').classList.add('screen-hidden'); document.getElementById('screen2').classList.remove('screen-hidden');">START YOUR JOURNEY</button>
+
+    </main>
+
+
+    <!-- SCREEN 2 -->
+    <main id="screen2" class="home-screen screen-hidden">
+
+        <h1>WHERE ARE YOU NOW?</h1>
+
+        <p class="tagline">
+            Choose where you are starting your journey.
+        </p>
+
+        <section class="starting-points">
+
+            <!-- HIGH SCHOOL -->
+            <button class="starting-card" id="highSchoolButton" onclick="document.getElementById('screen2').classList.add('screen-hidden'); document.getElementById('screen3').classList.remove('screen-hidden');">
+
+                <div class="person">&#127890;</div>
+                <h2>HIGH SCHOOL</h2>
+                <p>I'm currently in high school</p>
+
+            </button>
+
+
+            <!-- UNIVERSITY / COLLEGE -->
+            <button class="starting-card" id="universityButton">
+
+                <div class="person">🎓</div>
+
+                <h2>UNIVERSITY / COLLEGE</h2>
+                <p>I'm currently studying</p>
+
+            </button>
+
+    <!-- EMPLOYMENT -->
+    <button class="starting-card" id="employmentButton">
+      <div class="person">💼</div>
+      <h2>EMPLOYMENT</h2>
+      <p>Explore career and work opportunities</p>
+    </button>
+
+    <!-- ALUMNI -->
+    <button class="starting-card" id="alumniButton">
+      <div class="person">🤝</div>
+      <h2>ALUMNI</h2>
+      <p>Continue and share your journey</p>
+    </button>
+
+        </section>
+
+        <button type="button" id="screen2BackButton">BACK TO HOME</button>
+
+        <p class="screen-footer">
+            You can update your journey as your situation changes.
+        </p>
+
+    </main>
+
+
+<!-- SCREEN 3 -->
+<main id="screen3" class="home-screen screen-hidden">
+
+    <button type="button" id="profileBackButton">BACK</button>
+
+    <h1>HIGH SCHOOL PROFILE</h1>
+
+    <p class="tagline">
+        Tell us about yourself so we can help you explore your options.
+    </p>
+
+<label for="grade">GRADE</label>
+<select id="grade">
+    <option value="">Select your grade</option>
+    <option value="8">Grade 8</option>
+    <option value="9">Grade 9</option>
+    <option value="10">Grade 10</option>
+    <option value="11">Grade 11</option>
+    <option value="12">Grade 12</option>
+</select>
+
+<h2>SUBJECTS</h2>
+<label for="subject1">SUBJECT 1</label>
+<select id="subject1">
+    <option value="">Select a subject</option>
+    <option value="English Home Language">English Home Language</option>
+    <option value="English First Additional Language">English First Additional Language</option>
+    <option value="Mathematics">Mathematics</option>
+    <option value="Mathematical Literacy">Mathematical Literacy</option>
+    <option value="Physical Sciences">Physical Sciences</option>
+    <option value="Life Sciences">Life Sciences</option>
+    <option value="Accounting">Accounting</option>
+    <option value="Business Studies">Business Studies</option>
+    <option value="Computer Applications Technology">Computer Applications Technology</option>
+</select>
+
+<label for="mark1">SUBJECT 1 MARK</label>
+<input type="number" id="mark1" min="0" max="100">
+
+<label for="subject2">SUBJECT 2</label>
+<select id="subject2">
+    <option value="">Select a subject</option>
+    <option value="English Home Language">English Home Language</option>
+    <option value="English First Additional Language">English First Additional Language</option>
+    <option value="Mathematics">Mathematics</option>
+    <option value="Mathematical Literacy">Mathematical Literacy</option>
+    <option value="Physical Sciences">Physical Sciences</option>
+    <option value="Life Sciences">Life Sciences</option>
+    <option value="Accounting">Accounting</option>
+    <option value="Business Studies">Business Studies</option>
+    <option value="Computer Applications Technology">Computer Applications Technology</option>
+</select>
+
+<label for="mark2">SUBJECT 2 MARK</label>
+<input type="number" id="mark2" min="0" max="100">
+
+<label for="subject3">SUBJECT 3</label>
+<select id="subject3">
+    <option value="">Select a subject</option>
+    <option value="English Home Language">English Home Language</option>
+    <option value="English First Additional Language">English First Additional Language</option>
+    <option value="Mathematics">Mathematics</option>
+    <option value="Mathematical Literacy">Mathematical Literacy</option>
+    <option value="Physical Sciences">Physical Sciences</option>
+    <option value="Life Sciences">Life Sciences</option>
+    <option value="Accounting">Accounting</option>
+    <option value="Business Studies">Business Studies</option>
+    <option value="Computer Applications Technology">Computer Applications Technology</option>
+</select>
+
+<label for="mark3">SUBJECT 3 MARK</label>
+<input type="number" id="mark3" min="0" max="100">
+
+<label for="subject4">SUBJECT 4</label>
+<select id="subject4">
+    <option value="">Select a subject</option>
+    <option value="English Home Language">English Home Language</option>
+    <option value="English First Additional Language">English First Additional Language</option>
+    <option value="Mathematics">Mathematics</option>
+    <option value="Mathematical Literacy">Mathematical Literacy</option>
+    <option value="Physical Sciences">Physical Sciences</option>
+    <option value="Life Sciences">Life Sciences</option>
+    <option value="Accounting">Accounting</option>
+    <option value="Business Studies">Business Studies</option>
+    <option value="Computer Applications Technology">Computer Applications Technology</option>
+</select>
+
+<label for="mark4">SUBJECT 4 MARK</label>
+<input type="number" id="mark4" min="0" max="100">
+
+<label for="subject5">SUBJECT 5</label>
+<select id="subject5">
+    <option value="">Select a subject</option>
+    <option value="English Home Language">English Home Language</option>
+    <option value="English First Additional Language">English First Additional Language</option>
+    <option value="Mathematics">Mathematics</option>
+    <option value="Mathematical Literacy">Mathematical Literacy</option>
+    <option value="Physical Sciences">Physical Sciences</option>
+    <option value="Life Sciences">Life Sciences</option>
+    <option value="Accounting">Accounting</option>
+    <option value="Business Studies">Business Studies</option>
+    <option value="Computer Applications Technology">Computer Applications Technology</option>
+</select>
+
+<label for="mark5">SUBJECT 5 MARK</label>
+<input type="number" id="mark5" min="0" max="100">
+
+<label for="subject6">SUBJECT 6</label>
+<select id="subject6">
+    <option value="">Select a subject</option>
+    <option value="English Home Language">English Home Language</option>
+    <option value="English First Additional Language">English First Additional Language</option>
+    <option value="Mathematics">Mathematics</option>
+    <option value="Mathematical Literacy">Mathematical Literacy</option>
+    <option value="Physical Sciences">Physical Sciences</option>
+    <option value="Life Sciences">Life Sciences</option>
+    <option value="Accounting">Accounting</option>
+    <option value="Business Studies">Business Studies</option>
+    <option value="Computer Applications Technology">Computer Applications Technology</option>
+</select>
+
+<label for="mark6">SUBJECT 6 MARK</label>
+<input type="number" id="mark6" min="0" max="100">
+
+<label for="subject7">SUBJECT 7</label>
+<select id="subject7">
+    <option value="">Select a subject</option>
+    <option value="English Home Language">English Home Language</option>
+    <option value="English First Additional Language">English First Additional Language</option>
+    <option value="Mathematics">Mathematics</option>
+    <option value="Mathematical Literacy">Mathematical Literacy</option>
+    <option value="Physical Sciences">Physical Sciences</option>
+    <option value="Life Sciences">Life Sciences</option>
+    <option value="Accounting">Accounting</option>
+    <option value="Business Studies">Business Studies</option>
+    <option value="Computer Applications Technology">Computer Applications Technology</option>
+</select>
+
+<label for="mark7">SUBJECT 7 MARK</label>
+<input type="number" id="mark7" min="0" max="100">
+
+<label for="subject8">SUBJECT 8</label>
+<select id="subject8">
+    <option value="">Select a subject</option>
+    <option value="English Home Language">English Home Language</option>
+    <option value="English First Additional Language">English First Additional Language</option>
+    <option value="Mathematics">Mathematics</option>
+    <option value="Mathematical Literacy">Mathematical Literacy</option>
+    <option value="Physical Sciences">Physical Sciences</option>
+    <option value="Life Sciences">Life Sciences</option>
+    <option value="Accounting">Accounting</option>
+    <option value="Business Studies">Business Studies</option>
+    <option value="Computer Applications Technology">Computer Applications Technology</option>
+</select>
+
+<label for="mark8">SUBJECT 8 MARK</label>
+<input type="number" id="mark8" min="0" max="100">
+
+<div id="extraSubjectsContainer"></div>
+<button type="button" id="addSubjectButton">+ ADD ANOTHER SUBJECT</button>
+
+<h2>CAREER INTEREST</h2>
+
+<label>Choose up to five careers. Your choices are optional.</label>
+<div id="careerPicker">
+    <details id="careerDropdown">
+        <summary id="careerSummary">Select careers (0/5)</summary>
+        <div id="careerOptions">
+            <label><input type="checkbox" class="career-option" value="Engineering"> Engineering</label>
+            <label><input type="checkbox" class="career-option" value="Information Technology"> Information Technology</label>
+            <label><input type="checkbox" class="career-option" value="Health Sciences"> Health Sciences</label>
+            <label><input type="checkbox" class="career-option" value="Business"> Business</label>
+            <label><input type="checkbox" class="career-option" value="Education"> Education</label>
+            <label><input type="checkbox" class="career-option" value="Law"> Law</label>
+            <label><input type="checkbox" class="career-option" value="Science"> Science</label>
+            <label><input type="checkbox" class="career-option" value="Arts and Design"> Arts and Design</label>
+            <label><input type="checkbox" class="career-option" id="otherCareerOption" value="__other__"> Other</label>
+        </div>
+    </details>
+    <div id="otherCareerBox" style="display:none;">
+        <label for="otherCareerInput">Type another career, then press Add Career</label>
+        <div id="otherCareerTags"></div>
+        <input type="text" id="otherCareerInput" placeholder="Enter career name">
+        <button type="button" id="addCareerButton">ADD CAREER</button>
+    </div>
+    <p id="careerMessage" aria-live="polite"></p>
+</div>
+<div style="display:flex; gap:8px; margin:16px 0; flex-wrap:wrap;">
+    <button type="button" id="checkOptionsButton" style="flex:1; min-width:140px;">
+        CHECK MY OPTIONS
+    </button>
+    <button type="button" id="exploreButton" style="flex:1; min-width:140px;">
+        EXPLORE
+    </button>
+</div>
+
+<div id="results"></div>
+
+</main>
+
+<section id="universityScreen" style="display: none;">
+    <h2>INSTITUTION APPLICATION</h2>
+<p>Explore study opportunities that match your school results and career interests.</p>
+
+<p>Institution options will be compared automatically using your career interest and school results.</p>
+
+<p>The app will suggest courses related to your selected career and school results.</p>
+
+<br><br>
+
+<p>Available study modes will be shown for each course where verified.</p>
+
+<br><br>
+
+<div id="institutionResults"></div>
+
+<button type="button" id="resultsBackButton">BACK TO PROFILE</button>
+<button type="button" id="resultsHomeButton">RETURN TO HOME</button>
+
+</section>
+
+<!-- STANDALONE UNIVERSITY STUDENT SCREEN -->
+<section id="studentUniversityScreen" style="display: none;">
+
+    <h1>WELCOME TO UNIVERSITY!</h1>
+
+    <p id="studentWelcomeMessage">
+        Congratulations on beginning your university journey!
+    </p>
+
+    <p>
+        Record your modules and assessment marks to track your
+        academic progress throughout the year.
+    </p>
+
+    <h2>MY STUDENT PROFILE</h2>
+
+    <label for="studentInstitutionSelect">Institution</label>
+    <select id="studentInstitutionSelect">
+        <option value="">Choose institution</option>
+    </select>
+
+    <label for="studentQualificationSelect">Qualification</label>
+    <select id="studentQualificationSelect" disabled>
+        <option value="">Choose institution first</option>
+    </select>
+
+    <label for="studentStudyYearSelect">Year of Study</label>
+    <select id="studentStudyYearSelect" disabled>
+        <option value="">Choose qualification first</option>
+    </select>
+
+    <p id="studentModuleStatus">
+        Select an institution, qualification and year of study to view available modules.
+    </p>
+
+    <p id="studentInstitution">Institution: Not set yet</p>
+    <p id="studentQualification">Qualification: Not set yet</p>
+
+    <h2>MY MODULES AND ASSESSMENTS</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Module</th>
+                <th>Assessment</th>
+                <th>Assessment No.</th>
+                <th>Mark (%)</th>
+            </tr>
+        </thead>
+        <tbody id="studentModulesTable">
+            <tr>
+                <td><input type="text" placeholder="Module name"></td>
+                <td>
+                    <select>
+                        <option value="">Choose type</option>
+                        <option>Test</option>
+                        <option>Assignment</option>
+                        <option>Exam</option>
+                    </select>
+                </td>
+                <td>
+                    <select>
+                        <option value="">Choose number</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                    </select>
+                </td>
+                <td><input type="number" min="0" max="100" placeholder="Mark"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div id="studentModuleActions" style="display:flex;flex-wrap:nowrap;gap:6px;align-items:stretch;width:100%;">
+        <button type="button" id="addModuleButton" style="flex:1;min-width:0;padding:8px 3px;font-size:12px;">+ ADD MODULE</button>
+        <button type="button" id="studentCheckProgressButton" style="flex:1;min-width:0;padding:8px 3px;font-size:12px;">CHECK MY PROGRESS</button>
+        <button type="button" id="studentUniversityHomeButton" style="flex:1;min-width:0;padding:8px 3px;font-size:12px;">BACK TO MAIN MENU</button>
+    </div>
+    <div id="studentProgressFeedback" aria-live="polite"></div>
+
+</section>
+
+<!-- EMPLOYMENT SCREEN -->
+<section id="employmentScreen" class="home-screen" style="display:none;">
+  <h1>EMPLOYMENT</h1>
+  <p class="tagline">Explore pathways from learning to earning.</p>
+
+  <h2>Explore Career Pathways</h2>
+  <p>Compare university and college/TVET routes related to different careers.</p>
+
+  <div class="starting-points">
+    <article class="starting-card">
+      <h2>1. Information Technology</h2>
+      <p><strong>University route:</strong> Explore IT degrees and diplomas.</p>
+      <p>Possible next steps: internships, graduate programs and entry-level IT roles.</p>
+    </article>
+    <article class="starting-card">
+      <h2>2. Engineering</h2>
+      <p><strong>College/TVET route:</strong> Explore relevant engineering and technical programmes.</p>
+      <p>Possible next steps: apprenticeships, learnerships and technical roles.</p>
+    </article>
+    <article class="starting-card">
+      <h2>3. Welder or another trade</h2>
+      <p><strong>College/TVET route:</strong> Explore relevant trade training and practical qualifications.</p>
+      <p>Possible next steps: apprenticeships and trade-related work.</p>
+    </article>
+    <article class="starting-card">
+      <h2>4. Health Sciences</h2>
+      <p><strong>University route:</strong> Explore health-related qualifications and their entry requirements.</p>
+      <p>Possible next steps depend on the qualification and professional requirements.</p>
+    </article>
+    <article class="starting-card">
+      <h2>5. Business</h2>
+      <p><strong>College/TVET route:</strong> Explore business, finance and administration programmes.</p>
+      <p>Possible next steps: learnerships, internships and entry-level business roles.</p>
+    </article>
+    <article class="starting-card">
+      <h2>6. Chartered Accountant</h2>
+      <p><strong>University route:</strong> Explore accounting degrees and the required professional pathway.</p>
+      <p>Possible next steps: accounting internships and trainee programmes.</p>
+    </article>
+  </div>
+
+  <p class="screen-footer">These are pathway examples, not confirmed vacancies or admission offers. Check official institution and employer requirements.</p>
+  <button type="button" class="starting-card" onclick="closeJourneySection('employmentScreen')">BACK TO DASHBOARD</button>
+</section>
+
+<!-- ALUMNI SCREEN -->
+<section id="alumniScreen" class="home-screen" style="display:none;">
+  <h1>ALUMNI</h1>
+  <p class="tagline">Keep growing after your studies.</p>
+
+  <div class="starting-points">
+    <article class="starting-card">
+      <h2>Career Development</h2>
+      <p>Explore career guidance, professional development and further learning.</p>
+    </article>
+    <article class="starting-card">
+      <h2>Work Opportunities</h2>
+      <p>Look for graduate programmes, internships and suitable job opportunities.</p>
+    </article>
+    <article class="starting-card">
+      <h2>Further Study</h2>
+      <p>Investigate additional qualifications and skills that support your goals.</p>
+    </article>
+    <article class="starting-card">
+      <h2>Give Back</h2>
+      <p>Share advice and experiences to help learners plan their next steps.</p>
+    </article>
+  </div>
+
+  <button type="button" class="starting-card" onclick="closeJourneySection('alumniScreen')">BACK TO DASHBOARD</button>
+</section>
+
+
+
+<script>window.onerror = function(message, source, line) {alert("JavaScript error: " + message + " (line " + line + ")");return false;};</script>
+<script src="script.js?v=4"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
